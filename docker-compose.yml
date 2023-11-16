@@ -1,0 +1,18 @@
+version: "3.7"
+
+networks:
+  worker:
+    driver: bridge
+
+services:
+  worker-redis:
+    container_name: worker-redis
+    image: redis:latest
+    ports:
+      - "4000:6379"
+    command:
+      - redis-server
+      - --maxmemory-policy
+      - volatile-lru
+    networks:
+      - worker

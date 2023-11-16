@@ -1,0 +1,92 @@
+[
+ {
+   "ID": 1,
+   "Title": "Save The Forest",
+   "iconUrl": "quest-icons/1.png",
+   "Quest Giver": "Guard Dod",
+   "Description": "Adventurer! Please help me if you can, the forest is burning and the creatures are trapped behind walls of flame! Without your help they will surely perish. Here take this milk to fell the flames and free the creatures. Make haste and return to me when you have succeeded, I will be so greatful.  ",
+   "Minor Success": "You succeeded in putting out all the flames the forest is saved! you have my thanks and that of the towns people. Please take this as a reward, I can not thank you enough. ",
+   "Major Success": "I can not believe it, not only did you succeed in extinguishing all the flames, you also guided all the creatures to an area of safely where they can make new homes. The town and I are forever grateful to you."
+ },
+ {
+   "ID": 2,
+   "Title": "Follow The Smell...",
+   "iconUrl": "quest-icons/2.png",
+   "Quest Giver": "Notice Board",
+   "Description": "An odd smell floats on the wind into town, follow the smell to investigate.",
+   "Minor Success": "It turns out it was something you had stepped in... still you managed to clean it off your foot which is great.",
+   "Major Success": "An evil lurks beyond, you find the smell emanating from a cave but decide to just report back instead of venturing further. What could be in that cave... Great detective work!"
+ },
+ {
+   "ID": 3,
+   "Title": "Haunted House",
+   "iconUrl": "quest-icons/3.png",
+   "Quest Giver": "Old Gent",
+   "Description": "An old gent thinks his house is haunted! hes living in his shed in the cold too scared to go back inside, help investigate this mystery ",
+   "Minor Success": "It actually is haunted but the ghosts are friendly... you think. You managed to coax the old gent back into his house to live with the ghosts. You aren't 100% sure if that was the right choice, but here we are.",
+   "Major Success": "You find the ghosts and it turns out they are a friendly bunch, you ask them to move along and they decide to go find another house to haunt. Great success for the old gent!"
+ },
+ {
+   "ID": 4,
+   "Title": "Go Fishing",
+   "iconUrl": "quest-icons/4.png",
+   "Quest Giver": "Notice Board",
+   "Description": "Feed the people: Cats love fish! Donate 10 fish to those less fortunate",
+   "Minor Success": "You did great and donated 5 fish to the people who need them.",
+   "Major Success": "Wow, well done, you donated 10 fish to the less fortunate!"
+ },
+ {
+   "ID": 5,
+   "Title": "Farm for Food",
+   "iconUrl": "quest-icons/5.png",
+   "Quest Giver": "Notice Board",
+   "Description": "Feed the people: Farm the land and help provide food to those less fortunate",
+   "Minor Success": "Your pet returned with a bounty of food, there were a few eaten on the way back, oops! But none the less, this is great for the town.",
+   "Major Success": "Your pet returned with a huge bounty of food, and none were eaten on the way back! This is awesome for the town."
+ },
+ {
+   "ID": 6,
+   "Title": "Sheep Shearing",
+   "iconUrl": "quest-icons/6.png",
+   "Quest Giver": "Ed",
+   "Description": "Help Ed sheer all of his sheep ready to send to the weaver. You never know, there might even be some extra wool you can pocket whilst your there, although you'd never do that, because that's wrong!",
+   "Minor Success": "You helped Ed all day and managed to get almost half of his sheep sheered. Great work!",
+   "Major Success": "You helped Ed for all of the day and got all of his sheep sheered, great work you must be incredibly proud of yourself."
+ },
+ {
+   "ID": 7,
+   "Title": "Borrowing Fees",
+   "iconUrl": "quest-icons/7.png",
+   "Quest Giver": "The Librarian",
+   "Description": "Help the librarian collect unreturned books",
+   "Minor Success": "After rushing around Sapphire town you managed to collect about 10 books. Although the librarian did say there was 15 out at the moment. Still not bad for your first attempt!",
+   "Major Success": "You scampered about Sapphire town all day and got all 15 books back to the library. That's a major success indeed!"
+ },
+ {
+   "ID": 8,
+   "Title": "Gather Herbs",
+   "iconUrl": "quest-icons/8.png",
+   "Quest Giver": "Vets Assistant",
+   "Description": "Herbs for the Vet: The veterinarian requires 10 herbs to restock the medicine cabinet! please gather and deliver these asap. ",
+   "Minor Success": "Great work, you successfully helped the vet restock 5 herbs to the medicine cabinet. This will definitely help the people of the town if they become unwell!",
+   "Major Success": "Excellent work, you successfully helped the vet restock 10 herbs to the medicine cabinet. This will definitely help the people of the town if they become unwell!"
+ },
+ {
+   "ID": 9,
+   "Title": "The Show Must Go On!",
+   "iconUrl": "quest-icons/9.png",
+   "Quest Giver": "Circus Leader",
+   "Description": "One of the circus acts has been injured! Take their place in the town show",
+   "Minor Success": "When you got asked to take part in the show, you didn't realise it was as one of the clowns. But the crowd seemed to like you falling over all the time so that's good.",
+   "Major Success": "What a lot of fun, you messed about as a clown for about 3 hours and the audience were laughing their socks off! You did an amazing job, well done."
+ },
+ {
+   "ID": 10,
+   "Title": "It Takes Two To Tango",
+   "iconUrl": "quest-icons/10.png",
+   "Quest Giver": "Choreographer",
+   "Description": "One of the dancers is missing, help find them in time or take thier place in the dance",
+   "Minor Success": "You didn't manage to find the dancer and had to take their place. You filled the gap but you get the feeling it may of not gone quite as well as you had hoped.",
+   "Major Success": "Dancing is hard! But you twirled and swirled with the best of them. You managed to even convince some of the audience members you did this for a living! Well done."
+ }
+]

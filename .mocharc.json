@@ -1,0 +1,6 @@
+{
+  "recursive": true,
+  "require": ["ts-node/register", "src/fixtures.ts"],
+  "ignore": ["test/fixture-projects/**/*"],
+  "timeout": 30000000
+}

@@ -1,1 +1,26 @@
-# Coolcats-node
+# Cool Cats Worker Service
+The Cool Cats Worker service serves 2 fundamental functions.
+1. Receive inbound blockchain request messages from SQS and effect the
+corresponding blockchain web3 call.
+2. Listen to a list of blockchain contracts block-by-block and process
+any events discovered in the process. Processing events generally means
+interaction with the MYSQL back-end database.
+## Environment
+The following environment variables are needed to be defined for a deployed
+stage:
+
+| Environment Var                          | Description                                                                                                                                                                                                                                                                    |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AWS_REGION                               | Defaults to us-east-1                                                                                                                                                                                                                                                          |
+| AWS_SQS_URL                              | Required                                                                                                                                                                                                                                                                       |
+| AWS_S3_PRIVATE_PET_METADATA_IMAGE_BUCKET | Defaults to beta-coolpets-private,<br>should be set on production                                                                                                                                                                                                              |
+| AWS_S3_PUBLIC_PET_METADATA_IMAGE_BUCKET  | Defaults to beta-metadata.coolcatsnft.com,<br>should be set on production                                                                                                                                                                                                      |
+| AWS_CLOUDFRONT_DISTRIBUTION              | Set to '' if not using cloudfront, otherwise<br>is the distribution ID for the public<br>metadata/image bucket.                                                                                                                                                                |
+| MODE                                     | Must be set to prod, sand, dev, or beta                                                                                                                                                                                                                                        |
+| DB_CREDENTIALS                           | Required, format is:<br>{ "username": "whatever", <br>  "password": "whatever",<br>  "engine": "mysql",<br>  "host": "coolcats-beta.crobbjmyg2pc.us-east-1.rds.amazonaws.com",<br>  "port": 3306, <br>  "dbname": "coolcats", <br>  "dbClusterIdentifier": "coolcats-prod-2" } |
+| SYSTEM_ACCOUNT                           | Required, format is:<br>{ "publicAddress": "0x772B92a6AbE5129F8Ef91D164Cc757dd9BbD0BC7", "privateKey": "<whatever>" }                                                                                                                                                          |
+| PUSHER_CREDENTIALS                       | Required, format is:<br>{"appId": "1310679", "key": "e544a52f37920d89a779", "secret": "22833a1fd34fe6315a36", "cluster": "mt1"}                                                                                                                                                |
+| OPENSEA_API_KEY                          | Required, format is string                                                                                                                                                                                                                                                     |
+| OPENSEA_ENDPOINT                         | Defaults to https://api.opensea.io/ on production, https://testnets-api.opensea.io/ everywhere else                                                                                                                                                                            |
+| NEW_RELIC_APP_NAME                       | Required, needs to be ProdCCWorkerService, DevCCWorkerService, BetaCCWorkerService, or SandboxCCWorkerService                                                                                                                                                                  |
+| NEW_RELIC_LICENSE_KEY                    | Required, needs to be a string: 10520068371084329fa99ca2cfa6d532FFFFNRAL                                                                                                                                                                                                       |
